@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider com jQuery</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+
+<section class="main">
+	<h1>Plugin Slider com jQuery</h1>
+	<div class="slider">
+		<img src="imagens/skate_1.jpg" />
+		<img src="imagens/skate_2.jpg" />
+		<img src="imagens/skate_3.jpg" />
+	</div>
+	<span class="ant"><a href="#">Anterior</a></span>
+	<span class="prox"><a href="#">Próximo</a></span>
+</section>
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/sliderPlugin.js"></script>
+<script>
+
+	jQuery . sliderPlugin ();
+	jQuery ( '.ant' ) . on( 'click', function(event) { jQuery . sliderPlugin . fazTroca(event); } );
+	jQuery ( '.prox' ) . on( 'click', function(event) { jQuery . sliderPlugin . fazTroca(event); } );
+
+</script>
+
+</body>
+</html>
